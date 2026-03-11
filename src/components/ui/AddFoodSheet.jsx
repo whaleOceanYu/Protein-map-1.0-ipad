@@ -307,7 +307,7 @@ export default function AddFoodSheet({ onAdd, onClose }) {
       <div onClick={e => e.stopPropagation()} style={{
         position: 'absolute', bottom: 0, left: '50%',
         transform: 'translateX(-50%)',
-        width: '100%', maxWidth: '450px', maxHeight: '90dvh',
+        width: '100%', maxWidth: '680px', maxHeight: '90dvh',
         background: C.bg, borderRadius: '24px 24px 0 0',
         boxShadow: '0 -4px 32px rgba(0,0,0,0.15)',
         display: 'flex', flexDirection: 'column', overflow: 'hidden',

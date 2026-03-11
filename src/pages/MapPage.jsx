@@ -112,7 +112,7 @@ function MapController({ setZoom, mapRef }) {
     const hkcec         = [22.2833, 114.1731];
     const pt            = map.project(hkcec, 15);
     const adjusted      = map.unproject(L.point(pt.x, pt.y + offsetPx), 15);
-    map.setView(adjusted, 15, { animate: false });
+    map.setView(adjusted, 16, { animate: false });
   }, [map]); // eslint-disable-line
   useMapEvents({ zoomend: () => setZoom(map.getZoom()) });
   return null;
@@ -495,9 +495,9 @@ export default function MapPage() {
 
       {/* ── 全屏地圖 */}
       <MapContainer
-        center={[22.2833, 114.1731]} zoom={15}
+        center={[22.2833, 114.1731]} zoom={16}
         style={{ width: '100%', height: '100%' }}
-        zoomControl={true}
+        zoomControl={false}
       >
         <TileLayer
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
