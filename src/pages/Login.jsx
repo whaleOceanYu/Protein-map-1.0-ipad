@@ -75,7 +75,7 @@ export default function Login() {
           marginTop: '18px', textAlign: 'center', lineHeight: 1.7,
           position: 'relative', zIndex: 1, maxWidth: '280px',
         }}>
-          你的香港健康飲食地圖<br />為你推薦健康目標的餐廳
+          你的香港健康飲食地圖
         </p>
       </div>
 
