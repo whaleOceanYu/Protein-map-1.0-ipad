@@ -38,12 +38,13 @@ export default defineConfig(({ mode }) => {
   // 第三個參數 '' 表示不過濾前綴（同時讀取 VITE_ 和非 VITE_ 前綴的變量）
   const env = loadEnv(mode, process.cwd(), '')
   const baseUrl = env.VITE_DASHSCOPE_BASE_URL || env.DASHSCOPE_BASE_URL || DEFAULT_BASE_URL
+  const appBase = env.VITE_BASE || '/'
   // 去掉 URL 末尾的 /v1，得到代理的根地址（Vite proxy 需要域名+端口，不含路徑）
   const proxyTarget = baseUrl.replace(/\/v1\/?$/, '')
   const devKey = env.VITE_DASHSCOPE_API_KEY || env.DASHSCOPE_API_KEY || ''
 
   return {
-    base: '/Protein-map-1.0-ipad/',
+    base: appBase,
     plugins: [
       react(),
       VitePWA({
