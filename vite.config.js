@@ -43,6 +43,7 @@ export default defineConfig(({ mode }) => {
   const devKey = env.VITE_DASHSCOPE_API_KEY || env.DASHSCOPE_API_KEY || ''
 
   return {
+    base: '/Protein-map-1.0-ipad/',
     plugins: [
       react(),
       VitePWA({
