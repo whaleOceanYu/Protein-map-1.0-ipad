@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', 'PingFang TC', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+  font-weight: 400;
+  line-height: 1.72;
+  letter-spacing: 0.015em;
+  font-feature-settings: "kern" 1;
+  background: linear-gradient(135deg, #F4F1EC 0%, #EBE7E0 100%);
+  color: #2C3530;
+  margin: 0;
+  min-height: 100vh;
+  display: block;
+}
+
+.adm-card {
+  border-radius: 24px !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+  background: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: blur(10px);
+  margin-bottom: 12px;
+}
+
+.adm-button {
+  border-radius: 30px !important;
+}
+
+.adm-progress-bar {
+  --fill-color: #8BADA2 !important;
+}
+
+.adm-tabs-tab-line {
+  background: #6B9080 !important;
+}
+
+a {
+  color: #6B9080;
+  text-decoration: none;
+}
+a:hover {
+  color: #3E6854;
+}
+
+button {
+  border-radius: 30px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #EBE7E0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+button:hover {
+  background-color: #D8D3C8;
+}
+
+.adm-input {
+  background: rgba(255,255,255,0.5) !important;
+  backdrop-filter: blur(5px);
+}
+
+/* 防止 iOS Safari 在 focus input 時自動放大頁面 */
+input,
+textarea,
+select,
+[type="text"],
+[type="search"],
+[type="number"],
+[type="email"],
+[type="password"],
+.adm-input-element,
+.adm-search-bar-input,
+.adm-text-area-element {
+  font-size: 16px !important;
+  --adm-font-size-main: 16px;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', 'PingFang TC', 'Noto Sans TC', sans-serif;
+  color: #3E6854;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.45;
+}
+
+.serif {
+  font-family: 'Cormorant Garamond', 'PingFang TC', 'Noto Sans TC', sans-serif !important;
+  letter-spacing: 0.04em;
+}
+
+.text-light-weight {
+  font-weight: 300;
+  color: #7D8E88;
+}
+
+@keyframes markerGrow {
+  from { transform: scale(0.35); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+.adm-search-bar *,
+.adm-search-bar *:focus,
+.adm-search-bar *:focus-visible,
+.adm-search-bar *:focus-within {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+.adm-search-bar .adm-input-element {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.adm-search-bar .adm-input-wrapper,
+.adm-search-bar .adm-search-bar-input-box {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
